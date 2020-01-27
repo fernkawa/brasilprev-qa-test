@@ -1,0 +1,20 @@
+Cenário: Não é possível buscar pessoa por telefone inexistente 
+Quando eu acesso a AP a API                                                                                        Então o sistema exibe a tela para executar a API
+E eu preencho o campo Pessoa com valor Existente                                                               E eu preencher o campo Telefone com valor inexiste                                                                                                                                                                                  
+E eu clico no botão Executar
+Então o sistema exibe a mensagem “Pesquisa não encontrada”
+Cenário: Duas pessoas não podem ter o mesmo CPF
+Quando eu acesso a AP a API                                                                                        Então o sistema exibe a tela para executar a API
+E eu preencho o campo Pessoa 1 com valor Existente                                                               E eu preencher o campo CPF com valor existente    
+E eu preencho o campo Pessoa 2 com valor Existente                                                               E eu preencher o campo CPF com valor existente                                                                                                                                                                     
+                                                                                                                                                           E eu clico no botão Executar
+Então o sistema exibe a mensagem “Duas pessoas com o mesmo CPF”
+
+Cenário: Duas pessoas não podem ter o mesmo telefone
+Quando eu acesso a AP a API                                                                                        Então o sistema exibe a tela para executar a API
+E eu preencho o campo Pessoa 1 com valor Existente                                                               E eu preencher o campo Telefone com valor existente    
+E eu preencho o campo Pessoa 2 com valor Existente                                                               E eu preencher o campo Telefone com valor existente                                                                                                                                                                     
+                                                                                                                                                           E eu clico no botão Executar
+Então o sistema exibe a mensagem “Duas pessoas com o mesmo Telefone”
+
+
